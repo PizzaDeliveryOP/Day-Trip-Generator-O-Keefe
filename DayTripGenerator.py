@@ -13,7 +13,6 @@ list_of_accepted_values = ["yes, no"]
 #This is the Day Trip Dictionary that stores the user selected value for each piece of the day trip. 
 #Dictionary that retains each of the user inputs.
 day_trip_dictionary ={"destination": '', "restaurant": '', "mode_of_transportation": '', "entertainment": ''}
-
 #(5 points): As a user, I want a mode of transportation to be randomly selected for my day trip. 
 mode_of_transportation_guess = random.choice(mode_of_transportation_list)
 #(5 points): As a user, I want a form of entertainment to be randomly selected for my day trip.
@@ -87,7 +86,6 @@ def get_validate_user_input(list_of_excepted_values, message_to_prompt):
     else:
         print(f'I did not quite catch that. Please input {list_of_excepted_values} with regards to the query.')
         return get_validate_user_input()
-
 #(15 points): As a user, I want to be able to randomly re-select a destination, restaurant, mode of transportation, 
 #       and/or form of entertainment if I don’t like one or more of those things.
 #(10 points): As a user, I want to be able to confirm that my day trip is “complete” once I like all of the random selections.
@@ -106,7 +104,6 @@ def confirm_day_trip():
             print("Sorry that did not work out for you, let's try that again.")
             user_input_loop()
             break
-
 #This defines the User Input loop that asks about each of the sections of the user story.
 def user_input_loop():
     choose_destination()
@@ -114,11 +111,9 @@ def user_input_loop():
     choose_mode_of_transportation()
     choose_entertainment()
     confirm_day_trip()
-
 user_input_loop()
-
 #(5 points): Single Responsibility: As a developer, I want all of my functions to have a Single Responsibility. 
-#       Remember, each function should do just one thing!   
+#Remember, each function should do just one thing!   
 
     
 
