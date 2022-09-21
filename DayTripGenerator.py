@@ -3,13 +3,13 @@ import random
 #(5 points):  As a developer, I want to store my destinations, restaurants, mode of transportation, and entertainment in their own separate Lists. 
 #These lists define the available options for each category of the Day Trip 
 #This is a series of lists that define options for each of the categories for the user story
-destination_list = ["Earth", "Mars", "Pluto", "Mercury"]
-restaurant_list = ["McDonalds", "Fogo de Chao","Goodberry"]
-mode_of_transportation_list = ["Spelljammer", "Space Swine", "Planeswalking"]
-entertainment_list = ["Bother a Dragon", "Depose a democratically elected government","'Accidentally' invent gunpowder"]
+destination_list = ["Earth", "Mars", "Pluto", "Mercury","Sol"]
+restaurant_list = ["McDonalds", "Fogo de Chao","Goodberry", "Black Lotus"]
+mode_of_transportation_list = ["Spelljammer", "Space Swine", "Planeswalking", "Dreamwalking"]
+entertainment_list = ["Bother a Dragon", "Depose a democratically elected government","'Accidentally' invent gunpowder","Make friends"]
 list_of_accepted_values = ["yes, no"]
 #(5 points): As a developer, I want to store my final day trip selections in a Dictionary, 
-#       with a unique key value pair for each piece of the day trip. 
+# with a unique key value pair for each piece of the day trip. 
 #This is the Day Trip Dictionary that stores the user selected value for each piece of the day trip. 
 #Dictionary that retains each of the user inputs.
 day_trip_dictionary ={"destination": '', "restaurant": '', "mode_of_transportation": '', "entertainment": ''}
