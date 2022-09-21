@@ -1,4 +1,24 @@
-
+import random
+#(5 points): As a developer, I want to make at least three commits with descriptive messages 
+#(5 points):  As a developer, I want to store my destinations, restaurants, mode of transportation, and entertainment in their own separate Lists. 
+#These lists define the available options for each category of the Day Trip 
+#This is a series of lists that define options for each of the categories for the user story
+destination_list = ["Earth", "Mars", "Pluto", "Mercury","Sol"]
+restaurant_list = ["McDonalds", "Fogo de Chao","Goodberry", "Black Lotus"]
+mode_of_transportation_list = ["Spelljammer", "Space Swine", "Planeswalking", "Dreamwalking"]
+entertainment_list = ["Bother a Dragon", "Depose a democratically elected government","'Accidentally' invent gunpowder","Make friends"]
+list_of_accepted_values = ["yes, no"]
+#(5 points): As a developer, I want to store my final day trip selections in a Dictionary, 
+# with a unique key value pair for each piece of the day trip. 
+#This is the Day Trip Dictionary that stores the user selected value for each piece of the day trip. 
+#Dictionary that retains each of the user inputs.
+day_trip_dictionary ={"destination": '', "restaurant": '', "mode_of_transportation": '', "entertainment": ''}
+#(5 points): As a user, I want a mode of transportation to be randomly selected for my day trip. 
+mode_of_transportation_guess = random.choice(mode_of_transportation_list)
+#(5 points): As a user, I want a form of entertainment to be randomly selected for my day trip.
+entertainment_guess = random.choice(entertainment_list)
+# def choose_list_option(list_to_choose_from, key_to_set_on_dictionary, message_phrase):
+#This function block asks the user for input on which Destination they would like
 def choose_destination():
     temp_destinations_list = list(destination_list)
     #(5 points): As a user, I want a destination to be randomly selected for my day trip. 
